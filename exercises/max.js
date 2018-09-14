@@ -11,6 +11,15 @@
 
 // Your code :
 
+
+function max(argument1, argument2){
+
+	if (argument1 > argument2)
+		return argument1;
+	else
+		return argument2;
+}
+
 //* Begin of tests
 const assert = require('assert')
 

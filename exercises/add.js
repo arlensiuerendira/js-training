@@ -8,6 +8,14 @@
 
 // Your code :
 
+function add(argument1, argument2){
+	if (typeof argument1 === 'number' && typeof argument2 === 'number'){
+		return argument1 + argument2;
+	}
+
+}
+
+
 //* Begin of tests
 const assert = require('assert')
 const rand = Math.random()
