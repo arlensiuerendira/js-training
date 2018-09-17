@@ -10,6 +10,34 @@
  */
 
 // Your code :
+let resultat = 0;
+
+function multiply(arg1, arg2){
+	
+	if(arg1 === 0 || arg2 === 0)
+		return 0;
+
+	if(arg2 > 0){
+		if(arg2 === 1)
+			resultat = arg1;
+		else
+			resultat = arg1 + multiply(arg1, arg2 - 1); 
+	}
+	else{
+		if(arg2 < 0){
+			if(arg2 === -1)
+				resultat = -arg1;
+			else
+				resultat = -arg1 + multiply(arg1, arg2 + 1); 
+		}
+	}
+
+return resultat;
+
+}
+
+
+
 
 //* Begin of tests
 const assert = require('assert')
